@@ -1,0 +1,102 @@
+<html>
+<title>TUGAS ANIMATE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+	
+<body>
+	<style>
+		body {
+		  background-color: black;
+		}
+		</style>
+	
+<center>
+<div class="">
+<img src="poster.jpg" width="100%" height="40%">
+</div>
+<div class="w3-bar w3-grey">
+ <button class="w3-bar-item w3-button" onclick="openKota('Atas')">PROFIL</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">KARATE</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">SKATE</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">GUNUNG</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Mendekat')">PANTAI</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-button">ALBUM LAIN</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Kegelapan')">BAND</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Menghilang')">RIDING</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Putar')">KUDA BESI</button>
+	</div>
+ </div>
+ </div>
+<div id="Atas" class="w3-container kota w3-animate-top" style="display:none">
+	<font color="white"> <h2>Sekilas Tentang Saya</h2>
+ Rizal Ahmad Fauzi, itulah nama saya. 
+ Lahir di sebuah Kota kecil yang ada di Jawa Barat.
+ Yaitu Kota Sumedang, pada hari minggu setelah magrib tanggal 17 Oktober 2004.
+ <br>
+ <p></p>
+ <img src="dc.jpg" width="300">
+ </div>
+<div id="Bawah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>KARATE</h2>
+ Foto ini diambil ketika saya sedang menampilkan demo EKSKUL di salah satu Sekolah Menengah Atas favorit yang ada di Kota Sumedang.
+ Pada saat itu saya masih berstatus pelajar di Sekolah tersebut. 
+ <br>
+ <p></p>
+ <img src="karate.jpg" width="500">
+ </div>
+<div id="Kiri" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>SKATEBOARD</h2>
+ Foto ini diambil ketika saya sedang bermain papan skate di Jalan TOL CISUMDAWU sebelum TOL ini diresmikan dan dioprasionalkan.
+ <br>
+ <p></p>
+ <img src="skate.jpg" width="500">
+</div>
+<div id="Kanan" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>PUNCAK GUNUNG</h2>
+ Foto ini diambil ketika saya berada di Puncak Gunung Guntur pada saat merayakan Agustusan di tahun 2023.
+ <br>
+ <p></p>
+ <img src="puncak2.jpg" width="500">
+</div>
+<div id="Mendekat" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>TEPI PANTAI</h2>
+ Foto ini diambil ketika saya berada di Pantai Selatan, yaitu Pantai Cipatujah.
+ <br>
+ <p></p>
+ <img src="pantai.jpg" width="500">
+</div>
+<div id="Kegelapan" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>BAND TROK</h2>
+ Foto ini diambil ketika saya sedang berlatih di suatu studio musik bersama teman - teman.
+ <br>
+ <p></p>
+ <img src="band.jpg" width="500">
+</div>
+<div id="Menghilang" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>MOTORAN</h2>
+ Foto ini diambil ketika saya sedang berkendara di Kota Bandung.
+ <br>
+ <p></p>
+ <img src="motor2.jpg" width="500">
+</div>
+<div id="Putar" class="w3-container kota w3-spin" style="display:none">
+ <h2>MY PARTNER</h2>
+ Dia lah yang selalu menghibur dan menemani saya kemanapun saya pergi, dalam keadaan apapun.
+ <br>
+ <p></p>
+ <img src="klx.jpg" width="500">
+</div>
+<script>
+function openKota(namakota) {
+ var i; 
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html
